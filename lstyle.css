@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background: url('background.jpg')no-repeat;
+    background-position: center;
+    background-size: cover; 
+
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.logo{
+    font-size: 1cm;
+    color: navy;
+    user-select: none;
+}
+.navigation a{
+    position: relative;
+    font-size: 0.5cm;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.navigation .btnlogn-popup{
+    width: 120px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.5cm;
+    color: navy;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navigation .btnlogn-popup:hover {
+    background: pink;
+    color: black;
+}
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgb(0, 0, 0,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    transform: scale(0);
+    align-items: center;
+    overflow: hidden;
+    transition: transform .5s ease,height .2s ease;
+}
+.wrapper.active-popup{
+    transform: scale(1);
+}
+.wrapper.active{
+    height: 520px;
+}
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+}
+.wrapper.active .form-box.login{
+    position: absolute;
+    transform: translateX(-400px);
+}
+.wrapper .form-box.login{
+    transition: none;
+    transform: translateX(0px);
+}
+.wrapper .form-box.register{
+    position: absolute;
+    transform: translateX(400px);
+}
+.wrapper.active .form-box.register{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+.wrapper .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: skyblue;
+    font-size: 0.7cm;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+.form-box h2{
+    font-size: 1cm;
+    color: black;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: medium;
+    color: black;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .8s;
+}
+.inputbox input:focus~label,
+.inputbox input:valid~label{
+    top: -5px;
+}
+.inputbox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: small;
+    color: black;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+.inputbox .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 0.5cm;
+    color: black;
+    line-height: 57px;
+}
+.remember-forget{
+    font-size: 0.4cm;
+    color: black;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forget label input {
+    accent-color: black;
+    margin-right: 3px;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background: skyblue;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: medium;
+    color: black;
+    font-weight: 500;
+}
+.login-regiser{
+    font-size: 0.4cm;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.login-regiser p a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-regiser p a:hover{
+    text-decoration: underline;
+}

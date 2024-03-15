@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="syle.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz Page</title>
+</head>
+    <style>
+        #outer{
+            display: flex;
+        }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+       
+    }
+    .container {
+        width: 600px;
+        height:500px;
+        margin: 50px ;
+        margin-left: 90px;
+        padding: 20px;
+        background: skyblue;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .question-box {
+        background-color: skyblue;
+        padding: 15px;
+        margin-bottom: 24px;
+        border-radius: 5px;
+        text-align: left;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .options {
+        list-style-type: none;
+        padding: 8px 0px;
+        align-items: left;
+        align-content: space-between;
+        
+    }
+    .options li {
+        margin-bottom: 10px;
+
+    }
+    .options label {
+        display: block;
+        background-color: darkblue;
+        color: whitesmoke;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        height: 30px;
+        width:100px;
+        font-size: 20px;
+    }
+    .options label:hover {
+        background: pink;
+    }
+    .options input[type="radio"] {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    .bt {
+ 
+        background-color: #3e8a1d;
+        color: gold;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        width:120px;
+        height:50px;
+        margin-left: 470px;
+        font-size: 20px;
+    }
+    
+     button:hover {
+        background-color: lightgreen;
+        color: black;
+    }
+    #siximg img{
+        width: 300px;
+        height: 400px;
+        margin-top: 130px;
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+   
+
+    </style>
+    <div id="outer">
+        <div id="siximg">
+            <img src="https://img.freepik.com/premium-vector/student-girl-holding-number-cartoon-character-isolated-white-background_1639-18526.jpg?size=626&ext=jpg&ga=GA1.1.1983624751.1709173306&semt=ais">
+        </div>
+<div class="container">
+    <div class="question-box">
+        <h4>The Multiplication of  7 x 6 ?</h4>
+    </div>
+    <ul class="options">
+        <li>
+            <label for="option1">
+                <input type="radio" name="option" id="option1">63
+               
+            </label>
+        </li>
+        <li>
+            <label for="option2">
+                <input type="radio" name="option" id="option2"> 56
+                
+            </label>
+        </li>
+        <li>
+            <label for="option3">
+                <input type="radio" name="option" id="option3">  42
+               
+            </label>
+        </li>
+        <li>
+            <label for="option4">
+                <input type="radio" name="option" id="option4">43
+               
+            </label>
+           
+        </li>
+        
+        <a href="scorecard.html"><button class="bt"><b>Submit</b></button></a>
+        
+        
+       
+    </ul>
+     
+</div>
+<div id="siximg">
+<img src="https://img.freepik.com/free-vector/canadian-girl-wearing-cap-holding-math-number-six_1308-48037.jpg?size=626&ext=jpg&ga=GA1.1.1983624751.1709173306&semt=ais" alt="image">
+</div>
+</div>
+
+</body>
+</html>

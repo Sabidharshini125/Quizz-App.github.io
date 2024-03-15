@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Score Card</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        margin-top: 40px;
+        margin-left: 100px;
+        width: 550px;
+        height: 600px;
+         align-items: center;
+         justify-content: center;
+        background-color: #b3dfe5;
+        padding: 10px;
+        border-radius: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    h1 {
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+    
+    .score-card {
+        
+        
+        margin-bottom: 20px;
+        margin-left: 130px;
+        width:300px;
+        margin-top: 50px;
+        align-items: center;
+        align-content: space-between;
+    }
+    
+    .score {
+        
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px 20px;
+        text-align: left;
+        font-size: 17px;
+    }
+    
+    .unattempted { background-color: #ffcccb; }
+    .attempted { background-color: #ffebcc; }
+    .incorrect { background-color: #efe293; }
+    .correct { background-color: #d3e0dc; }
+    .cor{background-color: aliceblue;}
+   
+    #outer{
+        display: flex;
+    }
+    #twelveimg img{
+        width: 600px;
+        height: 600px;
+        margin-top: 40px;
+        margin-right: 150px;
+        margin-left: 50px;
+    }
+    .bt {
+ 
+ background-color: #3e8a1d;
+ color: gold;
+ border: none;
+ border-radius: 8px;
+ cursor: pointer;
+ width:120px;
+ height:50px;
+ margin-right: 90px;
+ font-size: 20px;
+ margin-left: 50px;
+}
+
+button:hover {
+ background-color: lightgreen;
+ color: black;
+}
+</style>
+</head>
+<body>
+    <div id="outer">
+    <div class="container">
+        <h1>Score Card</h1>
+        <div class="score-card">
+            <div class="score unattempted">Unattempted Questions: <b>0</b> </div>
+            <div class="score attempted">Attempted Questions: <b>5</b></div>
+            <div class="score incorrect">Incorrect answers  : <b>2</b></div>
+            <div class="score correct">Correct Answers      : <b>3</b></div>
+            <div class="score cor">Total Score      : <b>3</b></div>
+            <a href="sample.html"><button class="bt"><b>Home</b></button></a>
+        </div>
+          
+          
+    </div>
+    <div id="twelveimg">
+        <img src="Picture1.jpg">
+     </div>
+     </div>
+</body>
+</html>
